@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 nom-packrat = "0.3.0"
 nom = ">= 5.0.0"
+rbtree = ">= 0"

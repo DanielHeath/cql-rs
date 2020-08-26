@@ -1,3 +1,4 @@
+
 /// vocabulary Address generated from address.cql
 mod address {
   use std::convert::TryFrom;
@@ -46,8 +47,12 @@ mod address {
     pub company_name: CompanyName,
   }
 
+  use rbtree::RBTree;
+
   #[test]
   fn address() {
+    let mut book_reviews = RBTree::new();
+    book_reviews.insert("Grimms' Fairy Tales", "Masterpiece.");
 
     let mstr = String::from("Melbourne");
     match City::try_from(mstr) {
